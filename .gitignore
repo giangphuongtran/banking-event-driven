@@ -1,8 +1,39 @@
+# Env files
 .env
-.~/.env
+.env.*
+**/.env
+**/.env.*
 
-.DS_Store
+# Python
 __pycache__/
-*.pyc
-
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist/
+.build/
+.eggs/
 .venv/
+venv/
+ENV/
+.env/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+**/docker/postgres/data/
+**/data/
