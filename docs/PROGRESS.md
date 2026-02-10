@@ -24,3 +24,15 @@ me mi --role Admin --email admin@gmail.com --password airflow_password
 ```bash
 docker compose exec kafka kafka-topics --bootstrap-server kafka:9092 --list
 ```
+
+- Commit and save today's progress to Github
+
+```bash
+git init
+git add README.md
+git commit -m "Initial commit: event-driven banking data platform"
+git branch -M main
+git remote add origin https://github.com/giangphuongtran/banking-event-driven-with-docker-airflow-postgres-tableau.git
+git push -u origin main
+```
+
