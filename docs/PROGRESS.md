@@ -11,8 +11,7 @@ source .venv/bin/activate
 - Add `platform: linux/amd64` because some images in the `docker-compose.yml` don't publish an arm64 manifest for that tag
 
 ```bash
-docker compose exec airflow-webserver airflow users create --username mimi --firstname tran --lastna
-me mi --role Admin --email admin@gmail.com --password airflow_password
+docker compose exec airflow-webserver airflow users create --username mimi --firstname tran --lastname mi --role Admin --email admin@gmail.com --password airflow_password
 ```
 
 - Airflow services failed because of no airflow db init -> Add airflow-init service into `docker-compose.yml`
@@ -35,4 +34,6 @@ git branch -M main
 git remote add origin https://github.com/giangphuongtran/banking-event-driven-with-docker-airflow-postgres-tableau.git
 git push -u origin main
 ```
+
+- Create DAG tasks to download data from MinIO and load into Snowflake `docker/dags/minio_to_snowflake.py`
 
