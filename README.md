@@ -22,7 +22,7 @@ Completed implementation:
    - `dbt snapshot`
    - `dbt run --select marts`
 
-!(Architecture Overview)[docs/bankingDataPipeline.png]
+![Architecture Overview](.docs/bankingDataPipeline.png)
 
 ## Repository Structure
 
